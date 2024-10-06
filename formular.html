@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular inscriere examen</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <h2>Inscriere la examen</h2>
+
+        <label for="fullName">Nume complet</label>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="email">Adresa de email</label>
+        <input type="text" id="email" name="email" required><br><br>
+
+        <label for="examType">Tipul de examen:</label>
+        <select name="examType" id="examType">
+            <option value="examen1">Test</option>
+            <option value="examen2">Intermediar</option>
+            <option value="examen3">Final</option>
+        </select><br><br>
+
+        <label for="birthDate">Data nasterii:</label>
+        <input type="date" id="birthDate" name="birthDate"><br><br>
+
+        <label for="phone">Numar de telefon</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Introduceti 10 cifre"><br><br>
+        
+        <label for="address">Adresa</label>
+        <textarea name="address" id="address" rows="4" cols="35"></textarea><br><br>
+
+        <input type="submit" value="Inscrie-te">
+    </form>
+</body>
+</html>
